@@ -1,0 +1,28 @@
+:root {
+  --bg: #121216;
+  --panel: #1b1b21;
+  --panel2: #24242c;
+  --line: #2e2e38;
+  --text: #f3f1f5;
+  --muted: #9a98a6;
+  --pink: #ff4d94;
+  --pink2: #c2185b;
+  --grad: linear-gradient(135deg, #ff6fae, #d81b78);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body, #app { height: 100%; }
+body {
+  background: var(--bg); color: var(--text);
+  font-family: 'Segoe UI', system-ui, -apple-system, Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased; overflow: hidden;
+}
+button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; }
+input { font: inherit; color: inherit; }
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-thumb { background: #34343e; border-radius: 8px; }
+h1 { font-size: 28px; font-weight: 800; letter-spacing: -.5px; }
+h2 { font-size: 20px; font-weight: 700; margin-bottom: 14px; }
+.muted { color: var(--muted); }
+.empty { color: var(--muted); padding: 30px 0; text-align: center; }
+.spinner { width: 26px; height: 26px; border: 3px solid var(--line); border-top-color: var(--pink); border-radius: 50%; animation: sp .8s linear infinite; margin: 30px auto; }
+@keyframes sp { to { transform: rotate(360deg); } }
